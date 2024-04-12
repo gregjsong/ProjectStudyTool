@@ -7,8 +7,7 @@ body {
 }
 
 section {
-  height: 55vh;
-  max-height: 100vh;
+  height: 100%;
 }
 
 @media (min-width: 768px) {

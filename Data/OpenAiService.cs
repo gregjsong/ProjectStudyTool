@@ -12,12 +12,9 @@ public class OpenAiService
 
   public OpenAiService()
   {
-    // endpoint = System.Configuration.ConfigurationManager.AppSettings["endpoint"]!;
-    // apiKey = System.Configuration.ConfigurationManager.AppSettings["apiKey"]!;
-    // model = System.Configuration.ConfigurationManager.AppSettings["model"]!;
-    endpoint = Environment.GetEnvironmentVariable("OPENAI_ENDPOINT");
-    apiKey = Environment.GetEnvironmentVariable("OPENAI_APIKEY");
-    model = Environment.GetEnvironmentVariable("OPENAI_MODEL");
+    endpoint = Environment.GetEnvironmentVariable("endpoint");
+    apiKey = Environment.GetEnvironmentVariable("apiKey");
+    model = Environment.GetEnvironmentVariable("model");
 
     if (string.IsNullOrEmpty(endpoint) || string.IsNullOrEmpty(apiKey) || string.IsNullOrEmpty(model))
     {
